@@ -1,213 +1,97 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
 
-<meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<title>🌸 My Portfolio 🌸</title>
-
-
-<link rel="stylesheet" href="css/style.css">
-
-
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-
 
 <body>
 
-
-<!-- ฝนตก -->
-
 <div id="rain"></div>
 
+<!-- Navigation -->
+<header>
 
+<nav>
+
+<a href="index.html">🏠 หน้าแรก</a>
+
+<a href="about.html">👤 ประวัติส่วนตัว</a>
+
+<a href="education.html">🎓 การศึกษา</a>
+
+<a href="portfolio.html">💼 ผลงาน</a>
+
+<a href="activities.html">🌸 กิจกรรม</a>
+
+</nav>
+
+</header>
+
+<!-- Main -->
+
+<section class="hero">
+
+<div class="profile">
+
+<img src="images/profile.jpg" alt="Profile">
+
+</div>
+
+<h1>💗 Welcome To My Portfolio 💗</h1>
+
+<h2>ชื่อของคุณ</h2>
+
+<p>นักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
+
+<button id="openPopup">
+✨ แนะนำตัว
+</button>
+
+</section>
 
 <!-- Popup -->
 
 <div class="popup" id="popup">
 
-
 <div class="popup-content">
 
+<span id="closePopup">&times;</span>
 
-<h1>
-🌸 Welcome 🌸
-</h1>
-
+<h2>🌸 ยินดีต้อนรับ 🌸</h2>
 
 <p>
-ยินดีต้อนรับเข้าสู่ Portfolio ของฉัน 💗
+
+สวัสดีค่ะ ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของฉัน
+
+เว็บไซต์นี้รวบรวมประวัติส่วนตัว ประวัติการศึกษา ผลงาน และกิจกรรมต่าง ๆ
+
+ขอบคุณที่เข้ามาเยี่ยมชมค่ะ 💕
+
 </p>
-
-
-
-<button onclick="closePopup()">
-
-💖 เข้าสู่เว็บไซต์
-
-</button>
-
-
 
 </div>
 
 </div>
-
-
-
-
-
-
-<!-- เมนู -->
-
-
-<header>
-
-
-<nav class="navbar">
-
-
-<ul>
-
-
-<li>
-<a href="index.html">
-🏠 หน้าหลัก
-</a>
-</li>
-
-
-<li>
-<a href="profile.html">
-👤 ประวัติส่วนตัว
-</a>
-</li>
-
-
-
-<li>
-<a href="education.html">
-🎓 การศึกษา
-</a>
-</li>
-
-
-
-<li>
-<a href="achievement.html">
-🏆 ผลงาน
-</a>
-</li>
-
-
-
-<li>
-<a href="contact.html">
-📞 ติดต่อ
-</a>
-</li>
-
-
-
-</ul>
-
-
-</nav>
-
-
-</header>
-
-
-
-
-
-
-
-
-<!-- เนื้อหาหลัก -->
-
-
-<section class="hero">
-
-
-
-<img src="images/profile.jpg"
-class="profile-img">
-
-
-
-
-
-<h1>
-
-🌸 Portfolio Website 🌸
-
-</h1>
-
-
-
-<h2>
-
-นักเรียน ม.6/6 👩‍🎓
-
-</h2>
-
-
-
-<p>
-
-💗 เว็บไซต์แฟ้มสะสมผลงานส่วนตัว
-
-<br>
-
-รวมประวัติ การศึกษา ผลงาน และเกียรติบัตร
-
-</p>
-
-
-
-
-
-<a href="profile.html" class="btn">
-
-💖 เริ่มเข้าสู่ Portfolio
-
-</a>
-
-
-
-</section>
-
-
-
-
 
 <footer>
 
-
-🌸 My Cute Portfolio 🌸
-
+<p>© 2026 My Portfolio 💗</p>
 
 </footer>
 
-
-
-
-
-
-
-<script src="js/rain.js"></script>
-
-
-
-<script src="js/script.js"></script>
-
-
+<script src="script.js"></script>
 
 </body>
-
 
 </html>
