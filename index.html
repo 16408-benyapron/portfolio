@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>🌸 Portfolio</title>
+<title>🌸 My Cute Portfolio 🌸</title>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -17,9 +17,36 @@
 <body>
 
 
+<!-- ฝนตก -->
 <div id="rain"></div>
 
 
+
+<!-- Popup ต้อนรับ -->
+
+<div class="popup" id="welcome">
+
+<div class="popup-box">
+
+<h2>🌸 Welcome 🌸</h2>
+
+<p>
+ยินดีต้อนรับเข้าสู่ Portfolio ของฉัน 💗
+</p>
+
+<button onclick="closePopup()">
+💖 เข้าชมเว็บไซต์
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- เมนู -->
 
 <header>
 
@@ -27,15 +54,40 @@
 
 <ul>
 
-<li><a href="index.html">🏠 หน้าหลัก</a></li>
+<li>
+<a href="index.html">
+🏠 หน้าหลัก
+</a>
+</li>
 
-<li><a href="profile.html">👤 ประวัติส่วนตัว</a></li>
 
-<li><a href="education.html">🎓 การศึกษา</a></li>
+<li>
+<a href="profile.html">
+👤 ประวัติส่วนตัว
+</a>
+</li>
 
-<li><a href="achievement.html">🏆 ผลงาน</a></li>
 
-<li><a href="contact.html">📞 ติดต่อ</a></li>
+<li>
+<a href="education.html">
+🎓 การศึกษา
+</a>
+</li>
+
+
+<li>
+<a href="achievement.html">
+🏆 ผลงาน
+</a>
+</li>
+
+
+<li>
+<a href="contact.html">
+📞 ติดต่อ
+</a>
+</li>
+
 
 </ul>
 
@@ -46,42 +98,48 @@
 
 
 
+
+
+<!-- เนื้อหาหลัก -->
+
 <section class="hero">
+
 
 
 <img src="images/profile.jpg"
 class="profile-img"
-alt="รูปโปรไฟล์">
+alt="profile">
 
 
 
 <h1>
-🌸 ยินดีต้อนรับเข้าสู่ Portfolio 🌸
+🌸 ยินดีต้อนรับสู่ Portfolio 🌸
 </h1>
 
 
+
 <h2>
-👨‍🎓 นักเรียน ม.6/6
+👩‍🎓 นักเรียน ม.6/6
 </h2>
 
 
 
 <p>
 
-✨ แฟ้มสะสมผลงานส่วนตัว ✨
+💗 เว็บไซต์แฟ้มสะสมผลงานส่วนตัว
 
 <br>
 
-รวบรวมประวัติ ผลงาน และเกียรติบัตร
+✨ รวมประวัติ การศึกษา ผลงาน และเกียรติบัตร ✨
 
 </p>
 
 
 
 
-<a href="profile.html" class="btn">
+<a href="profile.html" class="main-btn">
 
-💗 เข้าสู่ Portfolio
+💖 คลิกเข้าสู่ Portfolio
 
 </a>
 
@@ -92,18 +150,34 @@ alt="รูปโปรไฟล์">
 
 
 
+
+
 <footer>
 
-<p>
-🌸 My Portfolio Website 🌸
-</p>
+🌸 Made with Love Portfolio 🌸
 
 </footer>
 
 
 
+
+
 <script src="js/rain.js"></script>
+
+
+<script>
+
+function closePopup(){
+
+document.getElementById("welcome").style.display="none";
+
+}
+
+</script>
+
+
 
 </body>
 
 </html>
+```
