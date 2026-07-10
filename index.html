@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
 
-<title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
 <div id="rain"></div>
 
+<!-- Navigation -->
 <header>
 
 <nav>
@@ -34,39 +38,57 @@
 
 </header>
 
+<!-- Main -->
+
 <section class="hero">
 
-<img src="images/profile.jpg" class="profile">
+<div class="profile">
 
-<h1>Welcome To My Portfolio 💗</h1>
+<img src="images/profile.jpg" alt="Profile">
 
-<p>Portfolio ของนักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
+</div>
 
-<button id="btn">แนะนำตัว</button>
+<h1>💗 Welcome To My Portfolio 💗</h1>
+
+<h2>ชื่อของคุณ</h2>
+
+<p>นักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
+
+<button id="openPopup">
+✨ แนะนำตัว
+</button>
 
 </section>
 
+<!-- Popup -->
+
 <div class="popup" id="popup">
 
-<div class="box">
+<div class="popup-content">
 
-<span id="close">&times;</span>
+<span id="closePopup">&times;</span>
 
-<h2>💗 ยินดีต้อนรับ 💗</h2>
+<h2>🌸 ยินดีต้อนรับ 🌸</h2>
 
 <p>
 
-สวัสดีค่ะ
+สวัสดีค่ะ ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของฉัน
 
-ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio
+เว็บไซต์นี้รวบรวมประวัติส่วนตัว ประวัติการศึกษา ผลงาน และกิจกรรมต่าง ๆ
 
-ขอบคุณที่เข้ามาเยี่ยมชม
+ขอบคุณที่เข้ามาเยี่ยมชมค่ะ 💕
 
 </p>
 
 </div>
 
 </div>
+
+<footer>
+
+<p>© 2026 My Portfolio 💗</p>
+
+</footer>
 
 <script src="script.js"></script>
 
