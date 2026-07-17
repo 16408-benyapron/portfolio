@@ -23,3 +23,42 @@
 </nav>
 
 </header>
+.navbar{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;
+}
+
+.logo{
+    font-size:35px;
+    color:#ff4fa0;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    list-style:none;
+    background:rgba(255,255,255,.25);
+    backdrop-filter:blur(15px);
+    padding:15px 35px;
+    border-radius:50px;
+}
+
+.menu li a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.menu li a:hover{
+    color:#ff4fa0;
+    transform:scale(1.1);
+}
