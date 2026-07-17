@@ -210,8 +210,7 @@ btn-back,
     transition:.3s;
 }
 
-.btn-back:hover,
-.btn-next:hover{
+.button-group .btn:hover{
     background:#ff1493;
     transform:scale(1.05);
 }
