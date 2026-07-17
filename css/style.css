@@ -191,3 +191,27 @@ height:160px;
 }
 
 }
+.button-group{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+}
+
+.btn-back,
+.btn-next{
+    display:inline-block;
+    padding:14px 30px;
+    background:#ff69b4;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-back:hover,
+.btn-next:hover{
+    background:#ff1493;
+    transform:scale(1.05);
+}
