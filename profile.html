@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ประวัติส่วนตัว</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+.profile-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:90vh;
+}
+
+.profile-card{
+    width:850px;
+    max-width:95%;
+    background:rgba(255,255,255,.3);
+    backdrop-filter:blur(18px);
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(255,105,180,.3);
+}
+
+.profile-title{
+    text-align:center;
+    color:#ff1493;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:15px;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.label{
+    font-weight:bold;
+    color:#ff1493;
+}
+
+.value{
+    color:#555;
+}
+
+.back{
+    display:block;
+    width:220px;
+    margin:30px auto 0;
+    text-align:center;
+    text-decoration:none;
+    background:#ff69b4;
+    color:white;
+    padding:14px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.back:hover{
+    background:#ff1493;
+}
+
+@media(max-width:768px){
+
+.info{
+grid-template-columns:1fr;
+}
+
+.profile-title{
+font-size:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">🏠 หน้าแรก</a></li>
+
+<li><a href="profile.html">👤 ประวัติส่วนตัว</a></li>
+
+<li><a href="education.html">🎓 การศึกษา</a></li>
+
+<li><a href="portfolio.html">💼 ผลงาน</a></li>
+
+<li><a href="activities.html">🌸 กิจกรรม</a></li>
+
+</ul>
+
+</nav>
+
+<section class="profile-page">
+
+<div class="profile-card">
+
+<h1 class="profile-title">👤 ประวัติส่วนตัว</h1>
+
+<div class="info">
+<div class="label">ชื่อ</div>
+<div class="value">นางสาวเบญญาพร จันทะสุทธิ์</div>
+</div>
+
+<div class="info">
+<div class="label">ชื่อเล่น</div>
+<div class="value">ใส่ชื่อเล่นของคุณ</div>
+</div>
+
+<div class="info">
+<div class="label">วันเกิด</div>
+<div class="value">ใส่วันเกิด</div>
+</div>
+
+<div class="info">
+<div class="label">อายุ</div>
+<div class="value">18 ปี</div>
+</div>
+
+<div class="info">
+<div class="label">โรงเรียน</div>
+<div class="value">ใส่ชื่อโรงเรียน</div>
+</div>
+
+<div class="info">
+<div class="label">แผนการเรียน</div>
+<div class="value">ใส่แผนการเรียน</div>
+</div>
+
+<div class="info">
+<div class="label">อีเมล</div>
+<div class="value">example@email.com</div>
+</div>
+
+<div class="info">
+<div class="label">โทรศัพท์</div>
+<div class="value">08x-xxx-xxxx</div>
+</div>
+
+<a href="index.html" class="back">🏠 กลับหน้าแรก</a>
+
+</div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
