@@ -197,7 +197,7 @@ height:160px;
     gap:20px;
     margin-top:40px;
 }
-btn-back,
+.btn-back,
 .btn-next{
 
     display:inline-block;
