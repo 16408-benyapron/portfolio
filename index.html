@@ -1,64 +1,142 @@
-<header>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
 
-<nav class="navbar">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<div class="logo">
-💗 Portfolio
-</div>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Kanit',sans-serif;
+        }
 
-<ul class="menu">
+        body{
+            background:linear-gradient(135deg,#ffd6e8,#ffc0cb,#ffb6d5);
+            min-height:100vh;
+            overflow:hidden;
+        }
 
-<li><a href="index.html">🏠 หน้าแรก</a></li>
+        /* เมนู */
+        nav{
+            display:flex;
+            justify-content:center;
+            margin-top:30px;
+        }
 
-<li><a href="profile.html">👤 ประวัติส่วนตัว</a></li>
+        nav ul{
+            display:flex;
+            gap:20px;
+            list-style:none;
+            background:rgba(255,255,255,.35);
+            backdrop-filter:blur(15px);
+            padding:15px 40px;
+            border-radius:50px;
+            box-shadow:0 10px 30px rgba(255,105,180,.25);
+        }
 
-<li><a href="education.html">🎓 การศึกษา</a></li>
+        nav a{
+            color:#ff1493;
+            text-decoration:none;
+            font-weight:600;
+            transition:.3s;
+        }
 
-<li><a href="portfolio.html">💼 ผลงาน</a></li>
+        nav a:hover{
+            color:white;
+            background:#ff69b4;
+            padding:8px 18px;
+            border-radius:30px;
+        }
 
-<li><a href="activities.html">🌸 กิจกรรม</a></li>
+        /* ส่วนกลาง */
+        .hero{
+            height:85vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
 
-</ul>
+        .card{
+            background:rgba(255,255,255,.28);
+            backdrop-filter:blur(20px);
+            border-radius:30px;
+            padding:40px;
+            width:380px;
+            box-shadow:0 15px 35px rgba(255,105,180,.3);
+        }
 
+        .card img{
+            width:190px;
+            height:190px;
+            border-radius:50%;
+            object-fit:cover;
+            border:6px solid white;
+            margin-bottom:20px;
+        }
+
+        h1{
+            color:#ff1493;
+            font-size:38px;
+        }
+
+        p{
+            margin:15px 0;
+            color:#555;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 35px;
+            background:#ff69b4;
+            color:white;
+            text-decoration:none;
+            border-radius:30px;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.08);
+            background:#ff1493;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">🏠 หน้าแรก</a></li>
+        <li><a href="profile.html">👤 ประวัติส่วนตัว</a></li>
+        <li><a href="education.html">🎓 การศึกษา</a></li>
+        <li><a href="portfolio.html">💼 ผลงาน</a></li>
+        <li><a href="activities.html">🌸 กิจกรรม</a></li>
+    </ul>
 </nav>
 
-</header>
-.navbar{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    margin-top:20px;
-}
+<section class="hero">
 
-.logo{
-    font-size:35px;
-    color:#ff4fa0;
-    font-weight:bold;
-    margin-bottom:20px;
-}
+<div class="card">
 
-.menu{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:20px;
-    list-style:none;
-    background:rgba(255,255,255,.25);
-    backdrop-filter:blur(15px);
-    padding:15px 35px;
-    border-radius:50px;
-}
+<img src="images/profile.png" alt="Profile">
 
-.menu li a{
-    text-decoration:none;
-    color:white;
-    font-weight:600;
-    transition:.3s;
-}
+<h1>ชื่อ - นามสกุล</h1>
 
-.menu li a:hover{
-    color:#ff4fa0;
-    transform:scale(1.1);
-}
+<p>Welcome to My Portfolio</p>
+
+<a href="profile.html" class="btn">
+เริ่มต้น
+</a>
+
+</div>
+
+</section>
+
+</body>
+</html>
