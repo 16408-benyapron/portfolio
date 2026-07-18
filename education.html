@@ -16,16 +16,17 @@ body{
     background:linear-gradient(135deg,#FFD6EA,#FFC7E3,#FFB6D5,#FFEAF4);
 }
 
+/* จัดตำแหน่งทั้งหน้า */
 .hero{
     display:flex;
     justify-content:center;
-    align-items:center;
-    min-height:90vh;
-    padding:40px 20px;
+    align-items:flex-start;
+    padding:120px 20px 40px;
 }
 
+/* กล่องหลัก */
 .card{
-    width:900px;
+    width:1200px;
     max-width:95%;
     background:rgba(255,255,255,.35);
     backdrop-filter:blur(20px);
@@ -34,20 +35,28 @@ body{
     box-shadow:0 15px 35px rgba(255,105,180,.3);
 }
 
+/* หัวข้อ */
 .title{
     text-align:center;
     color:#ff1493;
-    font-size:40px;
+    font-size:42px;
     margin-bottom:35px;
 }
 
+/* เรียงการ์ด 2 คอลัมน์ */
+.edu-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+/* การ์ด */
 .edu-box{
     background:white;
     border-left:8px solid #ff69b4;
-    border-radius:15px;
+    border-radius:20px;
     padding:20px;
-    margin-bottom:20px;
-    box-shadow:0 5px 15px rgba(255,105,180,.2);
+    box-shadow:0 8px 18px rgba(255,105,180,.2);
     transition:.3s;
 }
 
@@ -57,20 +66,21 @@ body{
 
 .edu-box h2{
     color:#ff1493;
-    margin-bottom:10px;
+    margin-top:0;
 }
 
 .edu-box p{
     margin:8px 0;
-    color:#555;
     font-size:18px;
+    color:#555;
 }
 
+/* ปุ่ม */
 .button-group{
     display:flex;
     justify-content:center;
     gap:20px;
-    margin-top:35px;
+    margin-top:40px;
 }
 
 .btn{
@@ -79,6 +89,7 @@ body{
     text-decoration:none;
     padding:14px 30px;
     border-radius:30px;
+    font-size:18px;
     font-weight:bold;
     transition:.3s;
 }
@@ -88,11 +99,20 @@ body{
     transform:scale(1.05);
 }
 
+/* มือถือ */
 @media(max-width:768px){
+
+.edu-container{
+    grid-template-columns:1fr;
+}
 
 .button-group{
     flex-direction:column;
     align-items:center;
+}
+
+.title{
+    font-size:34px;
 }
 
 }
@@ -118,6 +138,8 @@ body{
 <div class="card">
 
 <h1 class="title">🎓 ประวัติการศึกษา</h1>
+
+<div class="edu-container">
 
 <div class="edu-box">
 <h2>🏫 ระดับอนุบาล</h2>
@@ -145,17 +167,19 @@ body{
 <p><strong>โรงเรียน :</strong> โรงเรียนพานทอง</p>
 <p><strong>ปีการศึกษา :</strong> พ.ศ. 2567 - 2569</p>
 <p><strong>แผนการเรียน :</strong> ศิลป์ทั่วไป (อุตสาหกรรมการแปรรูปอาหาร)</p>
-<p><strong>สถานะ :</strong> กำลังศึกษา </p>
+<p><strong>สถานะ :</strong> กำลังศึกษา</p>
+</div>
+
 </div>
 
 <div class="button-group">
 
 <a href="profile.html" class="btn">
-⟵ ย้อนกลับ
+❮ ย้อนกลับ
 </a>
 
 <a href="portfolio.html" class="btn">
-ถัดไป ⟶
+ถัดไป ❯
 </a>
 
 </div>
