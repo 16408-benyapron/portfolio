@@ -6,31 +6,46 @@
 <title>ประวัติส่วนตัว</title>
 
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
 
-.profile-page{
+body{
+    margin:0;
+    font-family:'Kanit',sans-serif;
+    background:linear-gradient(135deg,#ffd6ea,#ffc7e3,#ffb6d5,#ffeaf4);
+}
+
+.hero{
     display:flex;
     justify-content:center;
     align-items:center;
     min-height:90vh;
+    padding:40px 20px;
 }
 
-.profile-card{
-    width:850px;
+.card{
+    width:900px;
     max-width:95%;
-    background:rgba(255,255,255,.3);
-    backdrop-filter:blur(18px);
+    background:rgba(255,255,255,.35);
+    backdrop-filter:blur(20px);
     border-radius:30px;
     padding:40px;
-    box-shadow:0 15px 35px rgba(255,105,180,.3);
+    text-align:center;
+    box-shadow:0 15px 35px rgba(255,105,180,.25);
 }
 
-.profile-title{
-    text-align:center;
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:20px;
+}
+
+h1{
     color:#ff1493;
-    font-size:40px;
     margin-bottom:30px;
 }
 
@@ -38,33 +53,33 @@
     display:grid;
     grid-template-columns:180px 1fr;
     gap:15px;
-    font-size:20px;
+    text-align:left;
     margin-bottom:15px;
+    font-size:19px;
 }
 
 .label{
-    font-weight:bold;
     color:#ff1493;
+    font-weight:bold;
 }
 
-.value{
-    color:#555;
+.button-group{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:35px;
 }
 
-.back{
-    display:block;
-    width:220px;
-    margin:30px auto 0;
-    text-align:center;
-    text-decoration:none;
+.btn{
     background:#ff69b4;
     color:white;
-    padding:14px;
+    text-decoration:none;
+    padding:14px 28px;
     border-radius:30px;
     transition:.3s;
 }
 
-.back:hover{
+.btn:hover{
     background:#ff1493;
 }
 
@@ -74,8 +89,8 @@
 grid-template-columns:1fr;
 }
 
-.profile-title{
-font-size:30px;
+.button-group{
+flex-direction:column;
 }
 
 }
@@ -87,86 +102,71 @@ font-size:30px;
 <body>
 
 <nav>
-
 <ul>
-
 <li><a href="index.html">🏠 หน้าแรก</a></li>
-
 <li><a href="profile.html">👤 ประวัติส่วนตัว</a></li>
-
 <li><a href="education.html">🎓 การศึกษา</a></li>
-
 <li><a href="portfolio.html">💼 ผลงาน</a></li>
-
 <li><a href="activities.html">🌸 กิจกรรม</a></li>
-
 </ul>
-
 </nav>
 
-<section class="profile-page">
+<section class="hero">
 
-<div class="profile-card">
+<div class="card">
 
-<h1 class="profile-title">👤 ประวัติส่วนตัว</h1>
+<img src="images/profile.jpg" class="profile">
+
+<h1>👤 ประวัติส่วนตัว</h1>
 
 <div class="info">
 <div class="label">ชื่อ</div>
-<div class="value">นางสาวเบญญาพร จันทะสุทธิ์</div>
+<div>นางสาวเบญญาพร จันทะสุทธิ์</div>
 </div>
 
 <div class="info">
 <div class="label">ชื่อเล่น</div>
-<div class="value">อัญชัน</div>
+<div>อัญชัน</div>
 </div>
 
 <div class="info">
 <div class="label">วันเกิด</div>
-<div class="value">02 ตุลาคม 2551</div>
+<div>2 ตุลาคม 2551</div>
 </div>
 
 <div class="info">
 <div class="label">อายุ</div>
-<div class="value">18 ปี</div>
+<div>18 ปี</div>
 </div>
 
 <div class="info">
 <div class="label">โรงเรียน</div>
-<div class="value">โรงเรียนพานทอง</div>
+<div>โรงเรียนพานทอง</div>
 </div>
 
 <div class="info">
 <div class="label">แผนการเรียน</div>
-<div class="value">ศิลป์ทั่วไป(อุตสาหกรรมการแปรรูปอาหาร)</div>
+<div>ศิลป์ทั่วไป (อุตสาหกรรมการแปรรูปอาหาร)</div>
 </div>
 
 <div class="info">
 <div class="label">อีเมล</div>
-<div class="value">16408@phanthong.ac.th</div>
+<div>16408@phanthong.ac.th</div>
 </div>
 
 <div class="info">
 <div class="label">โทรศัพท์</div>
-<div class="value">064-259-1887</div>
+<div>064-259-1887</div>
 </div>
+
 <div class="button-group">
-
-    <a href="index.html" class="btn">
-        ⬅ หน้าแรก
-    </a>
-
-    <a href="education.html" class="btn">
-        ➜ หน้าถัดไป
-    </a>
-
+<a href="index.html" class="btn">⬅ หน้าแรก</a>
+<a href="education.html" class="btn">หน้าถัดไป ➜</a>
 </div>
 
 </div>
 
 </section>
 
-<script src="js/script.js"></script>
-
 </body>
 </html>
-    
