@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>ประวัติส่วนตัว</title>
 
 <link rel="stylesheet" href="css/style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
@@ -13,8 +17,42 @@
 body{
     margin:0;
     font-family:'Kanit',sans-serif;
-    background:linear-gradient(135deg,#ffd6ea,#ffc7e3,#ffb6d5,#ffeaf4);
+    background:linear-gradient(135deg,#FFD6EA,#FFC7E3,#FFB6D5,#FFEAF4);
 }
+
+/* ---------- เมนู ---------- */
+
+nav{
+    background:#ff69b4;
+    padding:15px 0;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:0;
+    padding:0;
+    flex-wrap:wrap;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    padding:10px 18px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    background:white;
+    color:#ff1493;
+}
+
+/* ---------- เนื้อหา ---------- */
 
 .hero{
     display:flex;
@@ -27,11 +65,10 @@ body{
 .card{
     width:900px;
     max-width:95%;
-    background:rgba(255,255,255,.35);
-    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,.4);
+    backdrop-filter:blur(18px);
     border-radius:30px;
     padding:40px;
-    text-align:center;
     box-shadow:0 15px 35px rgba(255,105,180,.25);
 }
 
@@ -41,10 +78,13 @@ body{
     border-radius:50%;
     object-fit:cover;
     border:5px solid white;
-    margin-bottom:20px;
+    display:block;
+    margin:auto;
+    margin-bottom:25px;
 }
 
 h1{
+    text-align:center;
     color:#ff1493;
     margin-bottom:30px;
 }
@@ -53,7 +93,6 @@ h1{
     display:grid;
     grid-template-columns:180px 1fr;
     gap:15px;
-    text-align:left;
     margin-bottom:15px;
     font-size:19px;
 }
@@ -62,6 +101,12 @@ h1{
     color:#ff1493;
     font-weight:bold;
 }
+
+.value{
+    color:#555;
+}
+
+/* ---------- ปุ่ม ---------- */
 
 .button-group{
     display:flex;
@@ -74,23 +119,33 @@ h1{
     background:#ff69b4;
     color:white;
     text-decoration:none;
-    padding:14px 28px;
+    padding:14px 30px;
     border-radius:30px;
+    font-weight:bold;
     transition:.3s;
 }
 
 .btn:hover{
     background:#ff1493;
+    transform:scale(1.05);
 }
+
+/* ---------- มือถือ ---------- */
 
 @media(max-width:768px){
 
+nav ul{
+    flex-direction:column;
+    align-items:center;
+}
+
 .info{
-grid-template-columns:1fr;
+    grid-template-columns:1fr;
 }
 
 .button-group{
-flex-direction:column;
+    flex-direction:column;
+    align-items:center;
 }
 
 }
@@ -102,66 +157,77 @@ flex-direction:column;
 <body>
 
 <nav>
+
 <ul>
+
 <li><a href="index.html">🏠 หน้าแรก</a></li>
+
 <li><a href="profile.html">👤 ประวัติส่วนตัว</a></li>
-<li><a href="education.html">🎓 การศึกษา</a></li>
+
+<li><a href="education.html">🎓 ประวัติการศึกษา</a></li>
+
 <li><a href="portfolio.html">💼 ผลงาน</a></li>
+
 <li><a href="activities.html">🌸 กิจกรรม</a></li>
+
 </ul>
+
 </nav>
 
 <section class="hero">
 
 <div class="card">
 
-<img src="images/profile.jpg" class="profile">
+<img src="images/profile.jpg" alt="รูปโปรไฟล์" class="profile">
 
 <h1>👤 ประวัติส่วนตัว</h1>
 
 <div class="info">
 <div class="label">ชื่อ</div>
-<div>นางสาวเบญญาพร จันทะสุทธิ์</div>
+<div class="value">นางสาวเบญญาพร จันทะสุทธิ์</div>
 </div>
 
 <div class="info">
 <div class="label">ชื่อเล่น</div>
-<div>อัญชัน</div>
+<div class="value">อัญชัน</div>
 </div>
 
 <div class="info">
 <div class="label">วันเกิด</div>
-<div>2 ตุลาคม 2551</div>
+<div class="value">2 ตุลาคม 2551</div>
 </div>
 
 <div class="info">
 <div class="label">อายุ</div>
-<div>18 ปี</div>
+<div class="value">18 ปี</div>
 </div>
 
 <div class="info">
 <div class="label">โรงเรียน</div>
-<div>โรงเรียนพานทอง</div>
+<div class="value">โรงเรียนพานทอง</div>
 </div>
 
 <div class="info">
 <div class="label">แผนการเรียน</div>
-<div>ศิลป์ทั่วไป (อุตสาหกรรมการแปรรูปอาหาร)</div>
+<div class="value">ศิลป์ทั่วไป (อุตสาหกรรมการแปรรูปอาหาร)</div>
 </div>
 
 <div class="info">
 <div class="label">อีเมล</div>
-<div>16408@phanthong.ac.th</div>
+<div class="value">16408@phanthong.ac.th</div>
 </div>
 
 <div class="info">
 <div class="label">โทรศัพท์</div>
-<div>064-259-1887</div>
+<div class="value">064-259-1887</div>
 </div>
 
 <div class="button-group">
-<a href="index.html" class="btn">⟵ หน้าแรก</a>
-<a href="education.html" class="btn">หน้าถัดไป ⟶</a>
+
+<a href="index.html" class="btn">❮ หน้าแรก</a>
+
+<a href="education.html" class="btn">หน้าถัดไป ❯</a>
+
 </div>
 
 </div>
@@ -169,4 +235,5 @@ flex-direction:column;
 </section>
 
 </body>
+
 </html>
