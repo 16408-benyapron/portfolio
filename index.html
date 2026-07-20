@@ -145,24 +145,17 @@ height:180px;
 </div>
 </section>
 
-<div class="sakura"></div>
+<!-- เอฟเฟกต์และเพลง -->
+<button id="music-toggle" class="music-btn">🎵 เปิดเพลง</button>
 
-<script>
-const sakura = document.querySelector(".sakura");
+<audio id="bg-music" loop>
+    <source src="music/bg-music.mp3" type="audio/mpeg">
+</audio>
 
-for(let i = 0; i < 40; i++){
+<div id="sakura-container"></div>
+<div id="sparkle-container"></div>
+<div id="heart-container"></div>
 
-    const petal = document.createElement("span");
-
-    petal.style.left = Math.random() * 100 + "vw";
-    petal.style.animationDuration = (Math.random() * 6 + 6) + "s";
-    petal.style.animationDelay = Math.random() * 6 + "s";
-    petal.style.opacity = Math.random();
-    petal.style.transform = "scale(" + (Math.random() + 0.5) + ")";
-
-    sakura.appendChild(petal);
-}
-</script>
-
+<script src="js/script.js"></script>
 </body>
 </html>
