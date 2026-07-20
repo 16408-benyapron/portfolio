@@ -290,3 +290,20 @@ height:160px;
     background:#ff1493;
     transform:scale(1.05);
 }
+.music-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#ff69b4;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.music-btn:hover{
+    background:#ff1493;
+}
