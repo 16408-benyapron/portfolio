@@ -193,3 +193,100 @@ height:160px;
 }
 
 }
+/* ===== เอฟเฟกต์ซากุระ / ใบไม้ ===== */
+#sakura-container,
+#sparkle-container,
+#heart-container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:1;
+}
+
+.sakura{
+    position:absolute;
+    top:-50px;
+    font-size:24px;
+    animation:fall linear infinite;
+    opacity:0.9;
+}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-50px) translateX(0) rotate(0deg);
+        opacity:0;
+    }
+    10%{opacity:1;}
+    100%{
+        transform:translateY(110vh) translateX(120px) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* ===== วิ้งวิ้ง ===== */
+.sparkle{
+    position:absolute;
+    color:#fff;
+    font-size:18px;
+    animation:twinkle 2s ease-in-out infinite;
+}
+
+@keyframes twinkle{
+    0%,100%{
+        opacity:0;
+        transform:scale(0.5);
+    }
+    50%{
+        opacity:1;
+        transform:scale(1.2);
+    }
+}
+
+/* ===== หัวใจสีชมพูลอย ===== */
+.heart{
+    position:absolute;
+    bottom:-50px;
+    color:#ff69b4;
+    font-size:26px;
+    animation:floatUp linear infinite;
+    opacity:0.8;
+}
+
+@keyframes floatUp{
+    0%{
+        transform:translateY(0) scale(0.8);
+        opacity:0;
+    }
+    10%{opacity:1;}
+    100%{
+        transform:translateY(-120vh) translateX(80px) scale(1.2);
+        opacity:0;
+    }
+}
+
+/* ===== ปุ่มเพลง ===== */
+.music-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:9999;
+    background:#ff69b4;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(255,105,180,.4);
+    transition:.3s;
+}
+
+.music-btn:hover{
+    background:#ff1493;
+    transform:scale(1.05);
+}
