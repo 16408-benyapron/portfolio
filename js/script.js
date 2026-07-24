@@ -1,84 +1,124 @@
-// ===== ดอกซากุระ / ใบไม้ =====
-const sakuraContainer = document.getElementById('sakura-container');
+// ===============================
+// Portfolio Website Script
+// ===============================
 
-if (sakuraContainer) {
-    function createSakura() {
-        const sakura = document.createElement('div');
-        sakura.classList.add('sakura');
+// ---------- ซากุระ ----------
+const sakuraContainer = document.getElementById("sakura-container");
 
-        const flowers = ['🌸', '🍃', '🌺'];
-        sakura.innerHTML = flowers[Math.floor(Math.random() * flowers.length)];
+function createSakura() {
 
-        sakura.style.left = Math.random() * 100 + 'vw';
-        sakura.style.animationDuration = (5 + Math.random() * 5) + 's';
-        sakura.style.fontSize = (18 + Math.random() * 18) + 'px';
+    if(!sakuraContainer) return;
 
-        sakuraContainer.appendChild(sakura);
+    const sakura = document.createElement("div");
+    sakura.className = "sakura";
 
-        setTimeout(() => sakura.remove(), 10000);
-    }
+    const flowers = ["🌸","🌺","🍃"];
 
-    setInterval(createSakura, 400);
+    sakura.innerHTML = flowers[Math.floor(Math.random()*flowers.length)];
+
+    sakura.style.left = Math.random()*100 + "vw";
+    sakura.style.fontSize = (18 + Math.random()*18) + "px";
+    sakura.style.animationDuration = (6 + Math.random()*5) + "s";
+
+    sakuraContainer.appendChild(sakura);
+
+    setTimeout(()=>{
+        sakura.remove();
+    },11000);
+
 }
 
-// ===== วิ้งวิ้ง =====
-const sparkleContainer = document.getElementById('sparkle-container');
+setInterval(createSakura,350);
 
-if (sparkleContainer) {
-    function createSparkle() {
-        const sparkle = document.createElement('div');
-        sparkle.classList.add('sparkle');
-        sparkle.innerHTML = '✨';
+// ---------- วิ้ง ----------
+const sparkleContainer = document.getElementById("sparkle-container");
 
-        sparkle.style.left = Math.random() * 100 + 'vw';
-        sparkle.style.top = Math.random() * 100 + 'vh';
-        sparkle.style.animationDuration = (1 + Math.random() * 2) + 's';
+function createSparkle(){
 
-        sparkleContainer.appendChild(sparkle);
+    if(!sparkleContainer) return;
 
-        setTimeout(() => sparkle.remove(), 3000);
-    }
+    const sparkle = document.createElement("div");
 
-    setInterval(createSparkle, 500);
+    sparkle.className = "sparkle";
+
+    sparkle.innerHTML = "✨";
+
+    sparkle.style.left = Math.random()*100+"vw";
+    sparkle.style.top = Math.random()*100+"vh";
+    sparkle.style.animationDuration = (1+Math.random()*2)+"s";
+
+    sparkleContainer.appendChild(sparkle);
+
+    setTimeout(()=>{
+        sparkle.remove();
+    },3000);
+
 }
 
-// ===== หัวใจ =====
-const heartContainer = document.getElementById('heart-container');
+setInterval(createSparkle,500);
 
-if (heartContainer) {
-    function createHeart() {
-        const heart = document.createElement('div');
-        heart.classList.add('heart');
-        heart.innerHTML = '💖';
+// ---------- หัวใจ ----------
+const heartContainer = document.getElementById("heart-container");
 
-        heart.style.left = Math.random() * 100 + 'vw';
-        heart.style.animationDuration = (6 + Math.random() * 4) + 's';
-        heart.style.fontSize = (20 + Math.random() * 20) + 'px';
+function createHeart(){
 
-        heartContainer.appendChild(heart);
+    if(!heartContainer) return;
 
-        setTimeout(() => heart.remove(), 10000);
-    }
+    const heart = document.createElement("div");
 
-    setInterval(createHeart, 800);
+    heart.className="heart";
+
+    heart.innerHTML="💖";
+
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(22+Math.random()*18)+"px";
+    heart.style.animationDuration=(6+Math.random()*4)+"s";
+
+    heartContainer.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },10000);
+
 }
 
-// ===== เพลง =====
-const music = document.getElementById('bg-music');
-const musicBtn = document.getElementById('music-toggle');
+setInterval(createHeart,700);
 
-if (music && musicBtn) {
-    let isPlaying = false;
+// ---------- เพลง ----------
+const music=document.getElementById("bg-music");
+const musicBtn=document.getElementById("music-toggle");
 
-    musicBtn.addEventListener('click', () => {
-        if (!isPlaying) {
-            music.play();
-            musicBtn.innerHTML = '🔇 ปิดเพลง';
-            isPlaying = true;
-        } else {
-            music.pause();
-            musicBtn.innerHTML = '🎵 เปิดเพลง';
-            isPlaying = false;
-        }
-    });
+if(music && musicBtn){
+
+let playing=false;
+
+musicBtn.addEventListener("click",()=>{
+
+if(!playing){
+
+music.play();
+
+musicBtn.innerHTML="🔇 ปิดเพลง";
+
+playing=true;
+
+}else{
+
+music.pause();
+
+musicBtn.innerHTML="🎵 เปิดเพลง";
+
+playing=false;
+
 }
+
+});
+
+}
+
+// ---------- Fade In ----------
+window.addEventListener("load",()=>{
+
+document.body.classList.add("fade");
+
+});
