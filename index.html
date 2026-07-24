@@ -8,191 +8,331 @@
 <title>Portfolio | เบญญาพร จันทะสุทธิ์</title>
 
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-<style>
-
-body{
-margin:0;
-font-family:'Kanit',sans-serif;
-background:linear-gradient(135deg,#FFD6EA,#FFC7E3,#FFB6D5,#FFEAF4);
-overflow-x:hidden;
-}
-
-.hero{
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-padding:30px;
-}
-
-.card{
-
-width:900px;
-max-width:95%;
-background:rgba(255,255,255,.35);
-backdrop-filter:blur(20px);
-border-radius:35px;
-padding:50px;
-text-align:center;
-box-shadow:0 15px 35px rgba(255,105,180,.25);
-
-}
-
-.profile{
-
-width:220px;
-height:220px;
-border-radius:50%;
-object-fit:cover;
-border:6px solid white;
-box-shadow:0 10px 25px rgba(255,105,180,.4);
-
-}
-
-h1{
-
-font-size:55px;
-color:#ff1493;
-margin:25px 0 10px;
-
-}
-
-h2{
-
-font-size:30px;
-color:#ff69b4;
-margin-bottom:20px;
-
-}
-
-p{
-
-font-size:22px;
-color:#555;
-line-height:1.8;
-
-}
-
-.button-group{
-
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin-top:35px;
-
-}
-
-.btn{
-
-background:#ff69b4;
-color:white;
-text-decoration:none;
-padding:15px 28px;
-border-radius:35px;
-font-size:20px;
-transition:.3s;
-
-}
-
-.btn:hover{
-
-background:#ff1493;
-transform:scale(1.05);
-
-}
-
-footer{
-
-margin-top:40px;
-font-size:18px;
-color:#777;
-
-}
-
-@media(max-width:768px){
-
-h1{
-font-size:38px;
-}
-
-h2{
-font-size:24px;
-}
-
-p{
-font-size:18px;
-}
-
-.profile{
-width:170px;
-height:170px;
-}
-
-.button-group{
-flex-direction:column;
-}
-
-}
-
-</style>
 
 </head>
 
 <body>
 
-<section class="hero">
+<!-- ================= MENU ================= -->
 
-<div class="card">
+<nav>
 
-<img src="images/IMG_1105.jpeg" class="profile">
+<ul>
 
-<h1>PORTFOLIO</h1>
+<li><a href="index.html">🏠 หน้าแรก</a></li>
 
-<h2>นางสาวเบญญาพร จันทะสุทธิ์</h2>
+<li><a href="profile.html">👤 ประวัติส่วนตัว</a></li>
 
-<p>
-Welcome To My Portfolio Website 🌸<br>
-ยินดีต้อนรับสู่เว็บไซต์แฟ้มสะสมผลงานของฉัน
+<li><a href="education.html">🎓 การศึกษา</a></li>
+
+<li><a href="portfolio.html">💼 ผลงาน</a></li>
+
+<li><a href="activities.html">🌸 กิจกรรม</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section>
+
+<div class="card fade" style="max-width:900px;margin:auto;text-align:center;">
+
+<img src="images/profile.jpg" class="profile">
+
+<h1 class="title">
+
+นางสาวเบญญาพร จันทะสุทธิ์
+
+</h1>
+
+<p class="subtitle">
+
+Welcome To My Portfolio Website
+
+</p>
+
+<p style="font-size:20px;line-height:1.9;">
+
+สวัสดีค่ะ ยินดีต้อนรับเข้าสู่เว็บไซต์แฟ้มสะสมผลงาน (Portfolio)
+เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว ประวัติการศึกษา
+ผลงาน และกิจกรรมที่ได้เข้าร่วมตลอดช่วงการศึกษา
+
 </p>
 
 <div class="button-group">
 
-<a href="profile.html" class="btn">👤 ประวัติส่วนตัว</a>
+<a href="profile.html" class="btn">
 
-<a href="education.html" class="btn">🎓 การศึกษา</a>
+👤 ประวัติส่วนตัว
 
-<a href="portfolio.html" class="btn">💼 ผลงาน</a>
+</a>
 
-<a href="activities.html" class="btn">🌸 กิจกรรม</a>
+<a href="portfolio.html" class="btn">
+
+💼 ผลงาน
+
+</a>
 
 </div>
-
-<footer>
-
-💖 Benyaporn Chanthasuthi | Portfolio Website 💖
-
-</footer>
 
 </div>
 
 </section>
 
+<!-- ================= ABOUT ================= -->
+
+<section>
+
+<h1 class="title">
+
+✨ About Me
+
+</h1>
+
+<div class="grid-2" style="max-width:1100px;margin:auto;">
+
+<div class="info-box">
+
+<h3>🌸 เป้าหมาย</h3>
+
+<p>
+
+มุ่งมั่นพัฒนาตนเองทั้งด้านวิชาการ
+และทักษะการทำงาน
+เพื่อศึกษาต่อในระดับมหาวิทยาลัย
+และนำความรู้ไปใช้ให้เกิดประโยชน์
+
+</p>
+
+</div>
+
+<div class="info-box">
+
+<h3>💖 ความสามารถ</h3>
+
+<p>
+
+• Microsoft Office
+
+<br>
+
+• Canva
+
+<br>
+
+• HTML & CSS
+
+<br>
+
+• การทำงานเป็นทีม
+
+<br>
+
+• การสื่อสาร
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= MENU CARD ================= -->
+
+<section>
+
+<h1 class="title">
+📂 เมนูเว็บไซต์
+</h1>
+
+<div class="grid-3" style="max-width:1200px;margin:auto;">
+
+<div class="image-card">
+
+<div class="image-content">
+
+<h2>👤 ประวัติส่วนตัว</h2>
+
+<p>
+ข้อมูลส่วนตัว ความสามารถ งานอดิเรก
+และช่องทางการติดต่อ
+</p>
+
+<br>
+
+<a href="profile.html" class="btn">
+เข้าสู่หน้า
+</a>
+
+</div>
+
+</div>
+
+<div class="image-card">
+
+<div class="image-content">
+
+<h2>🎓 ประวัติการศึกษา</h2>
+
+<p>
+อนุบาล ประถมศึกษา
+มัธยมศึกษาตอนต้น
+และมัธยมศึกษาตอนปลาย
+</p>
+
+<br>
+
+<a href="education.html" class="btn">
+เข้าสู่หน้า
+</a>
+
+</div>
+
+</div>
+
+<div class="image-card">
+
+<div class="image-content">
+
+<h2>💼 ผลงาน</h2>
+
+<p>
+
+รวบรวมผลงานทั้งหมด
+จำนวน 6 ผลงาน
+
+</p>
+
+<br>
+
+<a href="portfolio.html" class="btn">
+
+เข้าสู่หน้า
+
+</a>
+
+</div>
+
+</div>
+
+<div class="image-card">
+
+<div class="image-content">
+
+<h2>🌸 กิจกรรม</h2>
+
+<p>
+
+กิจกรรมทั้งหมด
+จำนวน 6 กิจกรรม
+
+</p>
+
+<br>
+
+<a href="activities.html" class="btn">
+
+เข้าสู่หน้า
+
+</a>
+
+</div>
+
+</div>
+
+<div class="image-card">
+
+<div class="image-content">
+
+<h2>💖 ติดต่อ</h2>
+
+<p>
+
+อีเมล
+
+<br>
+
+Facebook
+
+<br>
+
+Instagram
+
+<br>
+
+โทรศัพท์
+
+</p>
+
+</div>
+
+</div>
+
+<div class="image-card">
+
+<div class="image-content">
+
+<h2>✨ Thank You</h2>
+
+<p>
+
+ขอบคุณที่เข้ามาเยี่ยมชม
+เว็บไซต์ Portfolio ของฉัน
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+© 2026 Portfolio Website
+
+<br>
+
+Designed by
+
+<strong>
+
+นางสาวเบญญาพร จันทะสุทธิ์
+
+</strong>
+
+</footer>
+
+<!-- ================= MUSIC ================= -->
+
 <button id="music-toggle" class="music-btn">
+
 🎵 เปิดเพลง
+
 </button>
 
 <audio id="bg-music" loop>
+
 <source src="music/เพลง.mp3" type="audio/mpeg">
+
 </audio>
 
+<!-- ================= EFFECT ================= -->
+
 <div id="sakura-container"></div>
+
 <div id="sparkle-container"></div>
+
 <div id="heart-container"></div>
 
 <script src="js/script.js"></script>
 
 </body>
+
 </html>
