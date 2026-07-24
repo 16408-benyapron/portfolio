@@ -1,168 +1,19 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>ประวัติส่วนตัว</title>
 
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-<style>
-
-body{
-    margin:0;
-    font-family:'Kanit',sans-serif;
-    background:linear-gradient(135deg,#FFD6EA,#FFC7E3,#FFB6D5,#FFEAF4);
-    padding-top:120px;
-}
-
-/* เมนู */
-nav{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    display:flex;
-    justify-content:center;
-    padding:18px 0;
-    background:rgba(255,255,255,.35);
-    backdrop-filter:blur(15px);
-    z-index:9999;
-}
-
-nav ul{
-    display:flex;
-    gap:20px;
-    list-style:none;
-    margin:0;
-    padding:15px 30px;
-    border-radius:50px;
-    background:rgba(255,255,255,.6);
-    box-shadow:0 10px 25px rgba(255,105,180,.2);
-    flex-wrap:wrap;
-}
-
-nav a{
-    text-decoration:none;
-    color:#ff1493;
-    font-weight:bold;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#ff69b4;
-}
-
-/* เนื้อหา */
-
-.hero{
-    display:flex;
-    justify-content:center;
-    padding:30px;
-}
-
-.card{
-    width:950px;
-    max-width:95%;
-    background:rgba(255,255,255,.45);
-    backdrop-filter:blur(20px);
-    border-radius:30px;
-    padding:40px;
-    box-shadow:0 15px 35px rgba(255,105,180,.25);
-}
-
-.profile{
-    display:block;
-    width:190px;
-    height:190px;
-    border-radius:50%;
-    object-fit:cover;
-    margin:auto;
-    border:6px solid white;
-    box-shadow:0 10px 25px rgba(255,105,180,.4);
-}
-
-.title{
-    text-align:center;
-    color:#ff1493;
-    font-size:48px;
-    margin:25px 0 40px;
-}
-
-.info{
-    display:grid;
-    grid-template-columns:220px 1fr;
-    gap:10px;
-    background:white;
-    padding:18px;
-    border-radius:18px;
-    margin-bottom:15px;
-    box-shadow:0 5px 15px rgba(255,105,180,.15);
-}
-
-.label{
-    font-weight:bold;
-    color:#ff1493;
-}
-
-.value{
-    color:#555;
-}
-
-.button-group{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    margin-top:35px;
-}
-
-.btn{
-    text-decoration:none;
-    background:#ff69b4;
-    color:white;
-    padding:14px 30px;
-    border-radius:30px;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#ff1493;
-    transform:scale(1.05);
-}
-
-@media(max-width:768px){
-
-body{
-    padding-top:170px;
-}
-
-nav ul{
-    flex-direction:column;
-    text-align:center;
-}
-
-.info{
-    grid-template-columns:1fr;
-}
-
-.button-group{
-    flex-direction:column;
-    align-items:center;
-}
-
-.title{
-    font-size:35px;
-}
-
-}
-
-</style>
 
 </head>
 
 <body>
+
+<!-- ================= เมนู ================= -->
 
 <nav>
 
@@ -178,59 +29,232 @@ nav ul{
 
 </nav>
 
-<section class="hero">
+<!-- ================= โปรไฟล์ ================= -->
 
-<div class="card">
+<section>
 
-<img src="images/IMG_1105.jpeg" class="profile">
+<div class="card fade" style="max-width:1100px;margin:auto;">
 
-<h1 class="title">👤 ประวัติส่วนตัว</h1>
+<img src="images/profile.jpg" class="profile" alt="Profile">
 
-<div class="info">
-<div class="label">ชื่อ - นามสกุล</div>
-<div class="value">นางสาวเบญญาพร จันทะสุทธิ์</div>
+<h1 class="title">
+👤 ประวัติส่วนตัว
+</h1>
+
+<div class="grid-2">
+
+<div class="info-box">
+
+<h3>📌 ข้อมูลส่วนตัว</h3>
+
+<p>
+
+<b>ชื่อ :</b> นางสาวเบญญาพร จันทะสุทธิ์
+
+<br><br>
+
+<b>ชื่อเล่น :</b> อัญชัน
+
+<br><br>
+
+<b>วันเกิด :</b> 2 ตุลาคม 2551
+
+<br><br>
+
+<b>อายุ :</b> 17 ปี
+
+<br><br>
+
+<b>สัญชาติ :</b> ไทย
+
+</p>
+
 </div>
 
-<div class="info">
-<div class="label">ชื่อเล่น</div>
-<div class="value">อัญชัน</div>
+<div class="info-box">
+
+<h3>🏫 การศึกษา</h3>
+
+<p>
+
+โรงเรียนพานทอง
+
+<br><br>
+
+แผนการเรียน
+
+ศิลป์ทั่วไป
+
+(อุตสาหกรรมการแปรรูปอาหาร)
+
+<br><br>
+
+กำลังศึกษาระดับชั้น
+
+มัธยมศึกษาปีที่ 6
+
+</p>
+
 </div>
 
-<div class="info">
-<div class="label">วันเกิด</div>
-<div class="value">2 ตุลาคม 2551</div>
 </div>
 
-<div class="info">
-<div class="label">อายุ</div>
-<div class="value">17 ปี</div>
+<br>
+
+<div class="grid-2">
+
+<div class="info-box">
+
+<h3>💖 ความสามารถ</h3>
+
+<p>
+
+• Microsoft Word
+
+<br>
+
+• Microsoft PowerPoint
+
+<br>
+
+• Canva
+
+<br>
+
+• HTML
+
+<br>
+
+• CSS
+
+<br>
+
+• การสื่อสาร
+
+<br>
+
+• การทำงานเป็นทีม
+
+</p>
+
 </div>
 
-<div class="info">
-<div class="label">โรงเรียน</div>
-<div class="value">โรงเรียนพานทอง</div>
+<div class="info-box">
+
+<h3>🎯 ความสนใจ</h3>
+
+<p>
+
+• ภาษาอังกฤษ
+
+<br>
+
+• งานเอกสาร
+
+<br>
+
+• งานประสานงาน
+
+<br>
+
+• การออกแบบ
+
+<br>
+
+• เว็บไซต์
+
+</p>
+
 </div>
 
-<div class="info">
-<div class="label">แผนการเรียน</div>
-<div class="value">ศิลป์ทั่วไป (อุตสาหกรรมการแปรรูปอาหาร)</div>
+</div>
+<div class="grid-2">
+
+<div class="info-box">
+
+<h3>📞 ช่องทางการติดต่อ</h3>
+
+<p>
+
+📧 <b>Email :</b>
+
+16408@phanthong.ac.th
+
+<br><br>
+
+📱 <b>โทรศัพท์ :</b>
+
+064-259-1887
+
+<br><br>
+
+📘 <b>Facebook :</b>
+
+Benyapron Chanthasut
+
+<br><br>
+
+📸 <b>Instagram :</b>
+
+@your_instagram
+
+<br><br>
+
+💚 <b>LINE :</b>
+
+your_line
+
+</p>
+
 </div>
 
-<div class="info">
-<div class="label">อีเมล</div>
-<div class="value">16408@phanthong.ac.th</div>
+<div class="info-box">
+
+<h3>🌸 งานอดิเรก</h3>
+
+<p>
+
+🌷 ฟังเพลง
+
+<br><br>
+
+📖 อ่านหนังสือ
+
+<br><br>
+
+💻 ออกแบบเว็บไซต์
+
+<br><br>
+
+🎨 ออกแบบ Canva
+
+<br><br>
+
+📷 ถ่ายภาพ
+
+<br><br>
+
+✈️ ท่องเที่ยว
+
+</p>
+
 </div>
 
-<div class="info">
-<div class="label">โทรศัพท์</div>
-<div class="value">064-259-1887</div>
 </div>
 
 <div class="button-group">
 
-<a href="index.html" class="btn">🏠 หน้าแรก</a>
+<a href="index.html" class="btn">
 
-<a href="education.html" class="btn">ถัดไป ➜</a>
+🏠 หน้าแรก
+
+</a>
+
+<a href="education.html" class="btn">
+
+🎓 ประวัติการศึกษา
+
+</a>
 
 </div>
 
@@ -238,14 +262,42 @@ nav ul{
 
 </section>
 
-<button id="music-toggle" class="music-btn">🎵 เปิดเพลง</button>
+<footer>
+
+© 2026 Portfolio Website
+
+<br>
+
+Designed by
+
+<strong>
+
+นางสาวเบญญาพร จันทะสุทธิ์
+
+</strong>
+
+</footer>
+
+<!-- ===== เพลง ===== -->
+
+<button id="music-toggle" class="music-btn">
+
+🎵 เปิดเพลง
+
+</button>
 
 <audio id="bg-music" loop>
+
 <source src="music/เพลง.mp3" type="audio/mpeg">
+
 </audio>
 
+<!-- ===== เอฟเฟกต์ ===== -->
+
 <div id="sakura-container"></div>
+
 <div id="sparkle-container"></div>
+
 <div id="heart-container"></div>
 
 <script src="js/script.js"></script>
